@@ -1,0 +1,84 @@
+.bg-image{
+    background-image: url(../images/background.jpg);
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backface-visibility: inherit;
+}
+.moon{
+    position: absolute;
+    top: 20%;
+    left: -10%;
+    height: 200x;
+    width: 200px;
+    animation: moon_move 10s infinite 0s linear;
+}
+.firefly_1{
+    position: absolute;
+    top: 80%;
+    height: 200px;
+    width: 600px;
+    animation: firefly_move_1 2s infinite 0s linear alternate;
+}
+.firefly_2{
+    position: absolute;
+    top: 75%;
+    left: 32%;
+    height: 250px;
+    width: 610px;
+    animation: firefly_move_2 2s infinite 0s linear alternate;
+}
+.firefly_3{
+    position: absolute;
+    top: 70%;
+    left: 65%;
+    height: 300px;
+    width: 610px;
+    animation: firefly_move_3 2s infinite 0s linear alternate;
+}
+.flowers_1{
+    position: absolute;
+    top: 40%;
+    left: 65%;
+    height: 200px;
+    width: 100px;
+    animation: flowers_move_1 3s infinite 0s linear; 
+}
+.flowers_2{
+    position: absolute;
+    top: 45%;
+    left: 70%;
+    height: 200px;
+    width: 100px;
+    animation: flowers_move_2 3s infinite 0s linear;
+}
+
+@keyframes moon_move {
+    0% {top: 20%; left: -10%;}
+    50% {top: 10%; left: 10%;}
+    100% {top: 0%; left: 50%;}
+}
+
+@keyframes firefly_move_1{
+    to{top:80%;}
+    from{top:75%;}
+}
+@keyframes firefly_move_2{
+    to{top:75%;}
+    from{top:70%;}
+}
+@keyframes firefly_move_3{
+    to{top:70%;}
+    from{top:65%;}
+}
+@keyframes flowers_move_1{
+    from{top: 40%;}
+    to{top: 45%;}
+}
+@keyframes flowers_move_2{
+    from{top:45%;}
+    to{top:50%;} 
+}
+
